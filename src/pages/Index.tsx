@@ -270,43 +270,93 @@ const Index = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto items-center">
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <p className="text-xl font-bold text-primary">FAO</p>
+              <img src="../../src/assets/images.jpeg" alt=""></img>
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <p className="text-xl font-bold text-primary">AGRA</p>
+              <img src="../../src/assets/OFFICIAL-MIIC-LOGO-PDF.webp" alt=""></img>
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <p className="text-xl font-bold text-primary">AfDB</p>
+              <img src="../../src/assets/Min-of-Agriculture-LOGO.jpg" alt=""></img>
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <p className="text-xl font-bold text-primary">iHub</p>
+              <img src="../../src/assets/fao_logo_3lines_en1.png" alt=""></img>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-card">
-        <div className="container px-4 mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">Meet Our Team</h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-            A passionate team committed to transforming African agriculture
-          </p>
-          <div className="relative max-w-4xl mx-auto">
-            <img 
-              src={communityImage} 
-              alt="SkyFarm Team" 
-              className="rounded-2xl shadow-2xl w-full"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex items-end p-8">
-              <p className="text-white text-lg">
-                Our diverse team combines expertise in agriculture, technology, and community development 
-                to create solutions that truly work for African farmers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Team Section */}
+<section className="py-20 bg-card">
+  <div className="container px-4 mx-auto">
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+      Meet Our Team
+    </h2>
+    <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+      A passionate team committed to transforming African agriculture
+    </p>
+
+    {/* Team Members Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16">
+      {/* Member 1 */}
+      <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img
+          src="../../src/assets/Ssali.JPG"
+          alt="Ssali Joshua"
+          className="w-32 h-32 rounded-full object-cover mb-4"
+        />
+        <h3 className="text-xl font-semibold text-foreground">Ssali Joshua</h3>
+        <p className="text-muted-foreground mb-4">Founder</p>
+        <a
+          href="https://www.linkedin.com/in/ssali-joshua-bfa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      {/* Member 2 */}
+      <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img
+          src="/images/mary.webp"
+          alt="Mary Namusoke"
+          className="w-32 h-32 rounded-full object-cover mb-4"
+        />
+        <h3 className="text-xl font-semibold text-foreground">Namata Haula Muanaisha</h3>
+        <p className="text-muted-foreground mb-4">Co-Founder</p>
+        <a
+          href="https://www.linkedin.com/in/marynamusoke/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      {/* Member 3 */}
+      <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img
+          src="/images/john.webp"
+          alt="John Okello"
+          className="w-32 h-32 rounded-full object-cover mb-4"
+        />
+        <h3 className="text-xl font-semibold text-foreground">Kagoya Bianca</h3>
+        <p className="text-muted-foreground mb-4">Agricultural Expert</p>
+        <a
+          href="https://www.linkedin.com/in/johnokello/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Call to Action Section */}
       <section className="py-20 bg-primary text-primary-foreground">
@@ -338,19 +388,19 @@ const Index = () => {
               <Card className="p-8 text-center bg-card border-border hover:shadow-lg transition-shadow">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2 text-card-foreground">Email</h3>
-                <p className="text-muted-foreground">hello@skyfarm.africa</p>
+                <p className="text-muted-foreground">ssalijoshua2002@gmail.com</p>
               </Card>
 
               <Card className="p-8 text-center bg-card border-border hover:shadow-lg transition-shadow">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2 text-card-foreground">Phone</h3>
-                <p className="text-muted-foreground">+254 700 123 456</p>
+                <p className="text-muted-foreground">+256 705 434 992</p>
               </Card>
 
               <Card className="p-8 text-center bg-card border-border hover:shadow-lg transition-shadow">
                 <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2 text-card-foreground">Location</h3>
-                <p className="text-muted-foreground">Nairobi, Kenya</p>
+                <p className="text-muted-foreground">Kampala, Uganda</p>
               </Card>
             </div>
           </div>
@@ -360,7 +410,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-card border-t border-border py-8">
         <div className="container px-4 mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 SkyFarm. Empowering African farmers with technology.</p>
+          <p>&copy; 2025 Agri Scout. Empowering African farmers with technology.</p>
         </div>
       </footer>
     </div>
