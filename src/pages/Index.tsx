@@ -311,14 +311,14 @@ const Index = () => {
       {/* Member 2 */}
       <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
         <img
-          src="/images/mary.webp"
+          src="../../src/assets/f903031c-35cb-44c9-aede-2290b9e5ea54.jpeg"
           alt="Mary Namusoke"
           className="w-32 h-32 rounded-full object-cover mb-4"
         />
         <h3 className="text-xl font-semibold text-foreground">Namata Haula Muanaisha</h3>
         <p className="text-muted-foreground mb-4">Co-Founder</p>
         <a
-          href="https://www.linkedin.com/in/marynamusoke/"
+          href="https://www.linkedin.com/in/haula-namata-muanaisha-83b431315/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary hover:underline"
@@ -330,14 +330,14 @@ const Index = () => {
       {/* Member 3 */}
       <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
         <img
-          src="/images/john.webp"
+          src="../../src/assets/PHOTO-2025-10-22-20-53-40.jpg"
           alt="John Okello"
           className="w-32 h-32 rounded-full object-cover mb-4"
         />
         <h3 className="text-xl font-semibold text-foreground">Kagoya Bianca</h3>
         <p className="text-muted-foreground mb-4">Agricultural Expert</p>
         <a
-          href="https://www.linkedin.com/in/johnokello/"
+          href="https://www.linkedin.com/in/bianca-kagoya-4735642ba/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary hover:underline"
@@ -402,7 +402,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-card border-t border-border py-8">
         <div className="container px-4 mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Agri Scout. Empowering African farmers with technology.</p>
+          <p>&copy; 2025 Sky Farm. Empowering African farmers with technology.</p>
         </div>
       </footer>
     </div>
