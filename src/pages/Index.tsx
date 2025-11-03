@@ -57,14 +57,6 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">Powerful Features</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-lg transition-shadow bg-card border-border">
-              <Sprout className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Smart Farm Monitoring</h3>
-              <p className="text-muted-foreground">
-                Track your crops in real-time with AI-powered insights. Get notifications about growth stages, 
-                irrigation needs, and optimal harvest times.
-              </p>
-            </Card>
 
             <Card className="p-8 hover:shadow-lg transition-shadow bg-card border-border">
               <Cloud className="h-12 w-12 text-primary mb-4" />
@@ -79,7 +71,7 @@ const Index = () => {
               <LineChart className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-2xl font-bold mb-4 text-card-foreground">Crop Health Insights</h3>
               <p className="text-muted-foreground">
-                AI-based disease detection and pest management recommendations to maximize your yield and 
+                Chatbot pest management tool for offering recommendations to maximize your yield and 
                 minimize losses.
               </p>
             </Card>
