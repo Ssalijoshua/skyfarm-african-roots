@@ -5,6 +5,14 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+/* 🟢 Scroll Path Styling */
+nav button {
+  @apply cursor-pointer px-2 transition-all;
+}
+
+nav button.active {
+  @apply text-primary font-bold underline underline-offset-4;
+}
 
 @layer base {
   :root {
