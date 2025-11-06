@@ -346,7 +346,7 @@ const Index = () => {
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-2">Pro Subscription</h3>
               <p className="text-muted-foreground mb-6">Ideal for professional farmers and cooperatives.</p>
-              <p className="text-5xl font-extrabold mb-6 text-primary">30,000<span className="text-lg text-muted-foreground">/month</span></p>
+              <p className="text-5xl font-extrabold mb-6 text-primary">UGX 30,000<span className="text-lg text-muted-foreground">/month</span></p>
               <ul className="text-left space-y-4 mb-8">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="text-primary h-5 w-5" />
