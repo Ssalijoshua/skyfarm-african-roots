@@ -104,7 +104,7 @@ const Index = () => {
     {/* Logo */}
   <div className="flex justify-center mb-10 animate-fade-in">
   <img
-    src="./../src/assets/logo.png"
+    src="@/assets/logo.png"
     alt="SkyFarm African Roots Logo"
     className="w-110 h-1000 rounded-full object-contain shadow-2xl bg-white p-6"
   />
@@ -460,16 +460,16 @@ const Index = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto items-center">
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <img src="../../src/assets/images.jpeg" alt="Partner 1" />
+              <img src="@/assets/images.jpeg" alt="Partner 1" />
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <img src="../../src/assets/OFFICIAL-MIIC-LOGO-PDF.webp" alt="Partner 2" />
+              <img src="@/assets/OFFICIAL-MIIC-LOGO-PDF.webp" alt="Partner 2" />
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <img src="../../src/assets/Min-of-Agriculture-LOGO.jpg" alt="Partner 3" />
+              <img src="@/assets/Min-of-Agriculture-LOGO.jpg" alt="Partner 3" />
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
-              <img src="../../src/assets/fao_logo_3lines_en1.png" alt="Partner 4" />
+              <img src="@/assets/fao_logo_3lines_en1.png" alt="Partner 4" />
             </div>
           </div>
         </div>
@@ -488,7 +488,7 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16">
             <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
               <img
-                src="../../src/assets/Ssali.JPG"
+                src="@/assets/Ssali.JPG"
                 alt="Ssali Joshua"
                 className="w-32 h-32 rounded-full object-cover mb-4"
               />
@@ -506,7 +506,7 @@ const Index = () => {
 
             <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
               <img
-                src="../../src/assets/f903031c-35cb-44c9-aede-2290b9e5ea54.jpeg"
+                src="@/assets/f903031c-35cb-44c9-aede-2290b9e5ea54.jpeg"
                 alt="Namata Haula Muanaisha"
                 className="w-32 h-32 rounded-full object-cover mb-4"
               />
@@ -524,7 +524,7 @@ const Index = () => {
 
             <div className="bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
               <img
-                src="../../src/assets/PHOTO-2025-10-22-20-53-40.jpg"
+                src="@/assets/PHOTO-2025-10-22-20-53-40.jpg"
                 alt="Kagoya Bianca"
                 className="w-32 h-32 rounded-full object-cover mb-4"
               />
