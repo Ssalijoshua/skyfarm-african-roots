@@ -346,7 +346,7 @@ const Index = () => {
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-2">Pro Subscription</h3>
               <p className="text-muted-foreground mb-6">Ideal for professional farmers and cooperatives.</p>
-              <p className="text-5xl font-extrabold mb-6 text-primary">$9<span className="text-lg text-muted-foreground">/month</span></p>
+              <p className="text-5xl font-extrabold mb-6 text-primary">30,000<span className="text-lg text-muted-foreground">/month</span></p>
               <ul className="text-left space-y-4 mb-8">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="text-primary h-5 w-5" />
@@ -436,21 +436,21 @@ const Index = () => {
           </h2>
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
             Collaborating with leading organizations to empower farmers across Africa
-          </p>
+          </p> {/*
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto items-center">
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
               <img src={partner1} alt="Partner 1" />
-            </div>
+            </div> */}
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
               <img src={miicLogo} alt="Partner 2" />
             </div>
-            <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
+            {/* <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
               <img src={agricultureLogo} alt="Partner 3" />
             </div>
             <div className="bg-card p-8 rounded-lg border border-border flex items-center justify-center">
               <img src={faoLogo} alt="Partner 4" />
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </section>
 
