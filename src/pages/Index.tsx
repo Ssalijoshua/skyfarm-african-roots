@@ -26,6 +26,7 @@ const sections = [
   { id: "features", label: "Features" },
   { id: "how", label: "How It Works" },
   { id: "benefits", label: "Benefits" },
+  { id: "pricing", label: "Pricing" },
   { id: "testimonials", label: "Stories" },
   { id: "partners", label: "Partners" },
   { id: "team", label: "Team" },
@@ -139,11 +140,10 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About SkyFarm</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              SkyFarm's mission is to transform traditional farming into data-driven, sustainable
+              At Sky Farm, we transform traditional farming into data-driven, sustainable
               agribusiness. We empower smallholder farmers across Africa with cutting-edge technology
-              that makes farming more profitable, predictable, and sustainable. By combining local
-              agricultural knowledge with modern digital tools, we're helping build the future of
-              African agriculture.
+              that makes farming more profitable and predictable through fighting unpredictable climate change and its effects. Our platform offers real-time weather forecasts, crop health monitoring, pest and disease
+              alerts, and a direct marketplace to connect farmers with international markets.
             </p>
           </div>
         </div>
@@ -215,10 +215,9 @@ const Index = () => {
               <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">
                 1
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Register Your Farm</h3>
+              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Farmer Onboarding</h3>
               <p className="text-muted-foreground">
-                Sign up with your phone number and add your farm details including location, crop
-                types, and farm size in just a few minutes.
+                Farmers register via USSD (*285*85#), selecting language, location, and crop. NGOs use a web dashboard for streamlined management.
               </p>
             </div>
 
@@ -227,11 +226,10 @@ const Index = () => {
                 2
               </div>
               <h3 className="text-2xl font-bold mb-4 text-card-foreground">
-                Track Growth & Get Insights
+                Advisory Engine
               </h3>
               <p className="text-muted-foreground">
-                Monitor your crops with our easy-to-use app. Receive personalized recommendations,
-                weather alerts, and expert advice tailored to your farm.
+                Inputs like crop, location, and satellite triggers generate localized SMS alerts, providing precise guidance.
               </p>
             </div>
 
@@ -240,11 +238,10 @@ const Index = () => {
                 3
               </div>
               <h3 className="text-2xl font-bold mb-4 text-card-foreground">
-                Sell Directly to Buyers
+                Multi-Channel Delivery
               </h3>
               <p className="text-muted-foreground">
-                List your produce on our marketplace, connect with verified buyers, and get paid
-                fairly for your hard work without middlemen.
+                Information reaches farmers via USSD/SMS for those without internet access and through our a mobile application for online access.
               </p>
             </div>
           </div>
@@ -318,6 +315,83 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section */}
+<section id="pricing" className="py-20 bg-card">
+  <div className="container px-4 mx-auto text-center">
+    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Pricing Plans</h2>
+    <p className="text-lg text-muted-foreground mb-16 max-w-3xl mx-auto">
+      Whether you're just getting started or running a large-scale farm, SkyFarm has a plan that fits your needs. 
+      Start for free and upgrade anytime to unlock advanced features.
+    </p>
+
+    <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      {/* Free Plan */}
+      <Card className="p-10 bg-background border-border shadow-md hover:shadow-xl transition-all">
+        <h3 className="text-3xl font-bold text-foreground mb-2">Freemium</h3>
+        <p className="text-muted-foreground mb-6">Perfect for smallholder farmers getting started.</p>
+        <p className="text-5xl font-extrabold mb-6 text-primary">Free</p>
+
+        <ul className="text-left space-y-4 mb-8">
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Access to basic weather alerts
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Crop management tips
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Community support access
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Commission off every market sale
+          </li>
+        </ul>
+
+        <Button size="lg" className="bg-primary text-white hover:bg-primary/90">
+          Get Started
+        </Button>
+      </Card>
+
+      {/* Subscription Plan */}
+      <Card className="p-10 bg-background border-border shadow-md hover:shadow-xl transition-all relative">
+        <div className="absolute top-0 right-0 bg-secondary text-white text-xs px-3 py-1 rounded-bl-lg">
+          Popular
+        </div>
+        <h3 className="text-3xl font-bold text-foreground mb-2">Pro Subscription</h3>
+        <p className="text-muted-foreground mb-6">Ideal for professional farmers and cooperatives.</p>
+        <p className="text-5xl font-extrabold mb-6 text-primary">$9<span className="text-lg text-muted-foreground">/month</span></p>
+
+        <ul className="text-left space-y-4 mb-8">
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Advanced weather prediction
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            No commission charged off market sales
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Live updates about international markets
+          </li>
+          <li className="flex items-center gap-3">
+            <CheckCircle2 className="text-primary h-5 w-5" />
+            Priority customer support
+          </li>
+        </ul>
+
+        <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
+          Upgrade Now
+        </Button>
+      </Card>
+    </div>
+  </div>
+</section>
+
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-card">
         <div className="container px-4 mx-auto">
@@ -333,13 +407,12 @@ const Index = () => {
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-bold text-card-foreground">Grace Wanjiku</p>
-                  <p className="text-sm text-muted-foreground">Maize Farmer, Uganda</p>
+                  <p className="font-bold text-card-foreground">Rebecca Nantongo</p>
+                  <p className="text-sm text-muted-foreground">Maize Farmer, Matugga</p>
                 </div>
               </div>
               <p className="text-muted-foreground italic">
-                "Since using SkyFarm, I've tripled my harvest and found new buyers online! The
-                weather alerts saved my crops twice this season."
+                "I always make losses when I miscalculate the times of the seasons. This affects my plans of planting, weeding and also harvesting. Since I started using SkyFarm, I have been able to plan well and make profits. I am excited about SkyFarms solution and I look forward to using it."
               </p>
             </Card>
 
@@ -349,13 +422,12 @@ const Index = () => {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <p className="font-bold text-card-foreground">James Ochieng</p>
-                  <p className="text-sm text-muted-foreground">Coffee Farmer, Kenya</p>
+                  <p className="font-bold text-card-foreground">Monday Hassan</p>
+                  <p className="text-sm text-muted-foreground">Bean Farmer, Mukono</p>
                 </div>
               </div>
               <p className="text-muted-foreground italic">
-                "The marketplace feature connected me directly with exporters. I'm now earning 40%
-                more per harvest without middlemen taking their cut."
+                "The market place feature of providing us with information about global marketing standards is what I find so interesting. I have always tried to export my produce to other countries but my products are either rejected because of their low quality or I am given a very low price for my hard work"
               </p>
             </Card>
 
@@ -365,13 +437,12 @@ const Index = () => {
                   <Sprout className="h-8 w-8 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-bold text-card-foreground">Amina Hassan</p>
-                  <p className="text-sm text-muted-foreground">Vegetable Farmer, Tanzania</p>
+                  <p className="font-bold text-card-foreground">Peter Ddumba</p>
+                  <p className="text-sm text-muted-foreground">Maize farmer, Buikwe</p>
                 </div>
               </div>
               <p className="text-muted-foreground italic">
-                "The crop health monitoring helped me detect disease early and save 80% of my tomato
-                crop. This app is a game-changer!"
+                "I am excited about SkyFarm because it will provide me with weather information that can help me plan my farming activities better. The offline feature will also help me access all these features deep in Buikwe without having to pay for internet access."
               </p>
             </Card>
           </div>
@@ -507,7 +578,7 @@ const Index = () => {
               <Card className="p-8 text-center bg-card border-border hover:shadow-lg transition-shadow">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2 text-card-foreground">Email</h3>
-                <p className="text-muted-foreground">ssalijoshua2002@gmail.com</p>
+                <p className="text-muted-foreground">salelgpu@gmail.com</p>
               </Card>
 
               <Card className="p-8 text-center bg-card border-border hover:shadow-lg transition-shadow">
